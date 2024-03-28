@@ -15,10 +15,12 @@
 
     switch ($variant) {
         case 'primary':
-            $variantClasses = 'bg-purple-500 text-white hover:bg-purple-600 focus:ring-purple-500';
+            // $variantClasses = 'bg-purple-500 text-white hover:bg-purple-600 focus:ring-purple-500';
+            $variantClasses = 'bg-blue-50 text-white hover:bg-blue-60 focus:ring-blue-50';
         break;
         case 'secondary':
-            $variantClasses = 'bg-white text-gray-500 hover:bg-gray-100 focus:ring-purple-500 dark:text-gray-400 dark:bg-dark-eval-1 dark:hover:bg-dark-eval-2 dark:hover:text-gray-200';
+            // $variantClasses = 'bg-white text-gray-500 hover:bg-gray-100 focus:ring-purple-500 dark:text-gray-400 dark:bg-dark-eval-1 dark:hover:bg-dark-eval-2 dark:hover:text-gray-200';
+            $variantClasses = 'bg-white text-gray-500 hover:bg-gray-100 focus:ring-blue-50 dark:text-gray-400 dark:bg-dark-eval-1 dark:hover:bg-dark-eval-2 dark:hover:text-gray-200';
         break;
         case 'success':
             $variantClasses = 'bg-green-500 text-white hover:bg-green-600 focus:ring-green-500';
@@ -35,8 +37,18 @@
         case 'black':
             $variantClasses = 'bg-black text-gray-300 hover:text-white hover:bg-gray-800 focus:ring-black dark:hover:bg-dark-eval-3';
         break;
+        case 'perfil':
+            $variantClasses = 'flex items-center 
+                    p-2 text-sm font-medium text-gray-500 
+                    rounded-md transition duration-150 ease-in-out
+                    hover:text-gray-700 focus:outline-none focus:ring 
+                    focus:ring-blue-50 focus:ring-offset-1 
+                    focus:ring-offset-white dark:focus:ring-offset-dark-eval-1
+                    dark:text-gray-400 dark:hover:text-gray-200';
+        break;
         default:
-            $variantClasses = 'bg-purple-500 text-white hover:bg-purple-600 focus:ring-purple-500';
+            // $variantClasses = 'bg-purple-500 text-white hover:bg-purple-600 focus:ring-purple-500';
+            $variantClasses = 'bg-blue-50 text-white hover:bg-blue-60 focus:ring-blue-50';
     }
 
     switch ($size) {

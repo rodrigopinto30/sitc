@@ -10,7 +10,9 @@
         :isActive="request()->routeIs('dashboard')"
     >
         <x-slot name="icon">
-            <x-icons.dashboard class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
+            {{-- <x-icons.dashboard class="flex-shrink-0 w-6 h-6" aria-hidden="true" /> --}}
+            <x-heroicon-o-home class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
+
         </x-slot>
     </x-sidebar.link>
 
@@ -19,7 +21,8 @@
         :active="Str::startsWith(request()->route()->uri(), 'buttons')"
     >
         <x-slot name="icon">
-            <x-heroicon-o-view-grid class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
+            {{-- <x-heroicon-o-view-grid class="flex-shrink-0 w-6 h-6" aria-hidden="true" /> --}}
+            <x-carbon-report class="flex-shrink-0 w-6 h-6" aria-hidden="true"/>
         </x-slot>
 
         <x-sidebar.sublink
@@ -44,7 +47,8 @@
         :active="Str::startsWith(request()->route()->uri(), 'buttons')"
     >
         <x-slot name="icon">
-            <x-heroicon-o-view-grid class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
+            {{-- <x-heroicon-o-view-grid class="flex-shrink-0 w-6 h-6" aria-hidden="true" /> --}}
+            <x-carbon-report class="flex-shrink-0 w-6 h-6" aria-hidden="true"/>
         </x-slot>
 
         <x-sidebar.sublink

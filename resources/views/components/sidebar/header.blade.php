@@ -6,7 +6,7 @@
     >
         <x-application-logo aria-hidden="true" class="w-10 h-auto" />
 
-        <span class="sr-only">Dashboard</span>
+        {{-- <span class="sr-only">Dashboard</span> --}}
     </a>
 
     <!-- Toggle button -->
@@ -30,9 +30,9 @@
             class="hidden w-6 h-6 lg:block"
         />
 
-        <x-heroicon-o-x
+        {{-- <x-heroicon-o-x
             aria-hidden="true"
             class="w-6 h-6 lg:hidden"
-        />
+        /> --}}
     </x-button>
 </div>

@@ -24,7 +24,7 @@
     >
         <form
             method="post"
-            action="{{ route('profile.destroy') }}"
+            {{-- action="{{ route('profile.destroy') }}" --}}
             class="p-6"
         >
             @csrf

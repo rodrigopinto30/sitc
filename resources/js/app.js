@@ -51,9 +51,9 @@ document.addEventListener('alpine:init', () => {
                 setTheme(this.isDarkMode)
             },
             isSidebarOpen: window.innerWidth > 1024,
+            isSidebarHovered: false,
             // sidebar de perfil para ancho de sidebar
             isSidebarPerfilOpen: window.innerWidth > 1024,
-            isSidebarHovered: false,
             // sidebar hover de perfil para ancho de sidebar
             isSidebarPerfilHovered:false,
             handleSidebarHover(value) {
@@ -62,12 +62,14 @@ document.addEventListener('alpine:init', () => {
                 }
                 this.isSidebarHovered = value
             },
-            // handleSidebarPerfilHover(value){
-            //     if (window.innerWidth < 1024) {
-            //         return
-            //     }
-            //     this.isSidebarPerfilHovered = value
-            // },
+            // hover perfil
+            handleSidebarPerfilHover(value){
+                if (window.innerWidth < 1024) {
+                    return
+                }
+                this.isSidebarPerfilHovered = value
+            },
+            
             handleWindowResize() {
                 if (window.innerWidth <= 1024) {
                     this.isSidebarOpen = false

@@ -5,7 +5,7 @@
     x-transition:leave="transition"
     x-transition:leave-start="opacity-100"
     x-transition:leave-end="opacity-0"
-    x-show="isSidebarOpen"
-    x-on:click="isSidebarOpen = false"
+    x-show="isSidebarPerfilOpen"
+    x-on:click="isSidebarPerfilOpen = false"
     class="fixed inset-0 z-20 bg-black/50 lg:hidden"
  ></div>

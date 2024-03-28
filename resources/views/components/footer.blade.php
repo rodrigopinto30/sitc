@@ -5,7 +5,7 @@
             target="_blank"
             class="text-blue-600 hover:underline"
         >
-            SENAZI
+            SENASA
         </a>
     </p>
 </footer>

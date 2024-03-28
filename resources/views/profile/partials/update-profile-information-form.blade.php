@@ -1,11 +1,11 @@
 <section>
     <header>
         <h2 class="text-lg font-medium">
-            {{ __('Profile Information') }}
+            {{ __('Informacion de usuario') }}
         </h2>
 
         <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-            {{ __("Update your account's profile information and email address.") }}
+            {{ __("Actualizar nombre de usuario y/o email") }}
         </p>
     </header>
 
@@ -15,7 +15,7 @@
 
     <form
         method="post"
-        action="{{ route('profile.update') }}"
+        {{-- action="{{ route('profile.update') }}" --}}
         class="mt-6 space-y-6"
     >
         @csrf
@@ -24,7 +24,7 @@
         <div class="space-y-2">
             <x-form.label
                 for="name"
-                :value="__('Name')"
+                :value="__('Nombre')"
             />
 
             <x-form.input
@@ -32,13 +32,13 @@
                 name="name"
                 type="text"
                 class="block w-full"
-                :value="old('name', $user->name)"
+                {{-- :value="old('name', $user->name)" --}}
                 required
                 autofocus
                 autocomplete="name"
             />
 
-            <x-form.error :messages="$errors->get('name')" />
+            {{-- <x-form.error :messages="$errors->get('name')" /> --}}
         </div>
 
         <div class="space-y-2">
@@ -52,7 +52,7 @@
                 name="email"
                 type="email"
                 class="block w-full"
-                :value="old('email', $user->email)"
+                {{-- :value="old('email', $user->email)" --}}
                 required
                 autocomplete="email"
             />
@@ -80,7 +80,7 @@
 
         <div class="flex items-center gap-4">
             <x-button>
-                {{ __('Save') }}
+                {{ __('Guardar') }}
             </x-button>
 
             @if (session('status') === 'profile-updated')
@@ -91,7 +91,7 @@
                     x-init="setTimeout(() => show = false, 2000)"
                     class="text-sm text-gray-600 dark:text-gray-400"
                 >
-                    {{ __('Saved.') }}
+                    {{ __('Guardar.') }}
                 </p>
             @endif
         </div>

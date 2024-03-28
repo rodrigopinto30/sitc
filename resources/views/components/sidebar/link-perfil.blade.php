@@ -23,13 +23,13 @@
 
         <span
             class="text-base font-medium whitespace-nowrap"
-            x-show="isSidebarOpen || isSidebarHovered"
+            x-show="isSidebarPerfilOpen || !isSidebarPerfilOpen"
         >
             {{ $title }}
         </span>
 
         <span
-            x-show="isSidebarOpen || isSidebarHovered"
+            x-show="isSidebarPerfilOpen || !isSidebarPerfilOpen"
             aria-hidden="true"
             class="relative block ml-auto w-6 h-6"
         >
@@ -54,7 +54,7 @@
 
         <span
             class="text-base font-medium"
-            x-show="isSidebarOpen || isSidebarHovered"
+            x-show="isSidebarPerfilOpen || !isSidebarPerfilOpen"
         >
             {{ $title }}
         </span>
